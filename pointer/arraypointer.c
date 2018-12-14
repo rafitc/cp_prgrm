@@ -1,17 +1,25 @@
 #include<stdio.h>
 #include<conio.h>
 void main(){
-    int num, a[50],*ptr, i;
+    int num=10,*ptr,i,x,count=0;
     //clrscr();
-    ptr = &a[50];
-    printf("Enter Size of array\n");
-    scanf("%d",&num);
-    printf("Enter Elements in array \n");
+    int a[10] = {4,2,5,6,3,4,2,2,6,6};
+    ptr = a;
+
+    printf("\nPrinting array elements \n");
     for(i=0; i<num; i++){
-        scanf("%d",*ptr+i);
+        printf("%d\n",*(ptr+i));
     }
+    printf("Enter a element want to search occurence\n");
+    scanf("%d",&x);
     for(i=0; i<num; i++){
-        printf("%d",*ptr+i);
+        if(*(ptr+i) == x){
+            count++;
+        }
     }
+    if(count>0)
+        printf("%d is %d times in the array",x,count);
+    else
+        printf("%d Not in this array\n",x);
     getch();
 }

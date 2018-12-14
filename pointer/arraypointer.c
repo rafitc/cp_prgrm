@@ -1,11 +1,16 @@
 #include<stdio.h>
 #include<conio.h>
 void main(){
-    int num=10,*ptr,i,x,count=0;
+    int num,*ptr,i,x,count=0;
     //clrscr();
-    int a[10] = {4,2,5,6,3,4,2,2,6,6};
+    int a[50];
     ptr = a;
-
+    printf("Enter size of array\n");
+    scanf("%d",&num);
+    printf("Enter array elements\n");
+    for(i=0; i<num; i++){
+        scanf("%d",(ptr+i));
+    }
     printf("\nPrinting array elements \n");
     for(i=0; i<num; i++){
         printf("%d\n",*(ptr+i));

@@ -1,5 +1,9 @@
 #include <conio.h>
+<<<<<<< HEAD
 #include <stdio.h>
+=======
+#include <stdio.h
+>>>>>>> af52c095a0df984ef95fb5578b4209d4a96179c7
 #include <stdlib.h>
 void main(){
     FILE *fp1,*fp2;

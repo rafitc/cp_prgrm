@@ -1,5 +1,6 @@
 #include <conio.h>
-#include <stdio.h>
+#include <stdio.h
+#include <stdlib.h>
 void main(){
     FILE *fp1,*fp2;
 //    int i,j;

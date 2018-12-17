@@ -1,0 +1,13 @@
+C:\Users\RAFI\Desktop\CP\CP EXAM\matrixMulti-pointer.c: In function 'main':
+C:\Users\RAFI\Desktop\CP\CP EXAM\matrixMulti-pointer.c:31:23: error: invalid type argument of unary '*' (have 'int')
+                 sum+= *(*(ptr1+i)+k) * *(*(ptr2+k)+j);
+                       ^
+C:\Users\RAFI\Desktop\CP\CP EXAM\matrixMulti-pointer.c:31:40: error: invalid type argument of unary '*' (have 'int')
+                 sum+= *(*(ptr1+i)+k) * *(*(ptr2+k)+j);
+                                        ^
+C:\Users\RAFI\Desktop\CP\CP EXAM\matrixMulti-pointer.c:32:9: error: invalid type argument of unary '*' (have 'int')
+         *(*(ptr2+i)+j) = sum;
+         ^
+C:\Users\RAFI\Desktop\CP\CP EXAM\matrixMulti-pointer.c:36:25: error: invalid type argument of unary '*' (have 'int')
+             printf("%d",*(*ptr3+i)+j);
+                         ^
